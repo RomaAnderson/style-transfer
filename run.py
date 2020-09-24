@@ -118,6 +118,8 @@ def main():
     out_img_hr = train(opt_img, vgg, weights, loss_fns, targets, optim, loss_layers, postpa, postpb, low_res = False)
 
     out_img_hr.save(f'outputs/{str(img_names[1]).split(".")[0]}_{str(img_names[0]).split(".")[0]}_out_hr.jpg')
+
+    print(f'output saved to: outputs/{str(img_names[1]).split(".")[0]}_{str(img_names[0]).split(".")[0]}_out_hr.jpg')
     
 
 

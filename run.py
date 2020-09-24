@@ -14,7 +14,7 @@ from torchvision import transforms
 from PIL import Image
 from collections import OrderedDict
 
-from train import 
+from train import prep_data, post, train
 from models import VGG, GramMatrix, GramMSELoss
 
 if not os.path.exists('/images/'):

@@ -1,30 +1,24 @@
-import time
 import os 
 import argparse
 
 import torch
 from torch.autograd import Variable
 import torch.nn as nn
-import torch.nn.functional as F
 from torch import optim
 
-import torchvision
-from torchvision import transforms
-
 from PIL import Image
-from collections import OrderedDict
 
 from train import prep_data, post, train
 from models import VGG, GramMatrix, GramMSELoss
 
-if not os.path.exists('/images/'):
-    os.makedirs('/images/')
+# if not os.path.exists('/images/'):
+#     os.makedirs('/images/')
 
-if not os.path.exists('/outputs/'):
-    os.makedirs('/outputs/')
+# if not os.path.exists('/outputs/'):
+#     os.makedirs('/outputs/')
 
-if not os.path.exists('/models/'):
-    os.makedirs('/models/')
+# if not os.path.exists('/models/'):
+#     os.makedirs('/models/')
 
 image_dir = os.getcwd() + '/images/'
 model_dir = os.getcwd() + '/models/'

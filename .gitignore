@@ -1,3 +1,10 @@
 models/*
 images/*
 outputs/*
+
+# Byte compiled files
+*.pyc
+__pycache__
+
+# Envs
+.vscode

@@ -1,11 +1,7 @@
 import torch
-import torchvision
 from torchvision import transforms
 
 from matplotlib import pyplot
-from PIL import Image
-
-import os
 
 def prep_data(img_size):
     prep = transforms.Compose([transforms.Resize(img_size),

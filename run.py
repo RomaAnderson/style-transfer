@@ -92,7 +92,7 @@ def main():
     print("processing high res...")
 
     #prep hr images
-    prep_hr = prep_data(800)
+    prep_hr = prep_data(1024)
     imgs_torch = [prep_hr(img) for img in imgs]
     if torch.cuda.is_available():
         imgs_torch = [Variable(img.unsqueeze(0).cuda()) for img in imgs_torch]
